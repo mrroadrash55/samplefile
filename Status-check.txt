@@ -1,0 +1,22 @@
+################# status check ######################
+
+/opt/Solartis_PMT/dc/bin/jboss-cli.sh --connect --controller=10.104.8.96:19999 --commands="ls /host=KH8/server-config=01_PMT_KB1.2" --user=devopsuser --password=devopsuser*1
+
+/opt/SOLARTIS_ISO_KB_EAP7.3.2/dc/bin/jboss-cli.sh --connect --controller=10.101.10.44:19990 --commands="ls /host=KH22/server-config=SolartisWF_Temp_1.1" --user=devopsuser --password=devopsuser*1
+
+ /opt/Solartis_Hybrid_EAP7/dc/bin/jboss-cli.sh --connect --controller=10.101.2.11:19990
+
+
+
+################# nodedetails.conf data #######################
+SolartisWF_Temp_1.1_username=devopsuser
+SolartisWF_Temp_1.1_password=devopsuser*1
+SolartisWF_Temp_1.1_ip=10.101.10.44
+SolartisWF_Temp_1.1_port=19990
+SolartisWF_Temp_1.1_hostname=KH22
+
+ESign_kb1.1_username=devopsuser
+ESign_kb1.1_password=devopsuser*1
+ESign_kb1.1_ip=10.101.1.135
+ESign_kb1.1_port=19999
+ESign_kb1.1_hostname=IH2
